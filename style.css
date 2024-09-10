@@ -1,3 +1,13 @@
+body {
+  background-color: #daedf5;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
 #content {
-     margin-left: 20px;
+    margin-left: 20px;
+}
+
+.bg-light p-3 {
+	font-size: 40px;
 }
