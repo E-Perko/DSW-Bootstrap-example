@@ -11,3 +11,18 @@ body {
 .bg-light p-3 {
 	font-size: 40px;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay {
+    position:absolute; 
+	min-width: 100%;
+	min-height: 100%;
+}
+
