@@ -1,5 +1,5 @@
 body {
-  background-color: #daedf5;
+  background-color: #8fccf2;
 }
 
 #content {
@@ -45,9 +45,15 @@ body {
 	padding-top:17%;
 }
 
+<<<<<<< HEAD
  
  
  
  
  
  
+=======
+.col-md-3 {
+	padding-top:3%;
+}
+>>>>>>> 0a180e058c16df07be1494ed9ccc24fb9524d61c
