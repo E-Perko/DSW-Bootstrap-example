@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="script1.js"></script>
+	<script src="script.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Home - My Webpage</title>
@@ -54,7 +54,7 @@
 				<img src="pine-tree.png" alt-text="Tree Icon" class="icon">
 			</div>
 			<div class="col-sm-2 text-warning pt-3">
-				<h1>Primary <br> Real Estate </h1>
+				<h1 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Choose number 3!">Primary <br> Real Estate </h1>
 			</div>
 			<div class="col-sm-4 text-center text-white pt-5">
 				<br><br><br><br><br><br><br><br><br><br>
@@ -65,16 +65,62 @@
 			<div class="col-sm-4 text-end text-white pt-3">
 					<button type="button" class="btn btn-outline-warning btn-xl" data-bs-toggle="collapse" data-bs-target="#reveal">Contact</button>
 					<div id="reveal" class="collapse">
-					<h6 class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PASSWORD</h6>
+						
+							<h6 class="text-center" id="revealpassword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nothing To See Here</h6>
+						
+					</div>
+					<div id="password">
+						<h6 class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GYUD>@UHDN</h6>
 					</div>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="col-sm-12 footer text-white text-center ">
-				<h5>Instagram&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;Facebook</h5>
+			<div class="col-sm-12 footer text-white text-center">
+				<div class="btn-group">
+					<button type="button" class="btn btn-warning mg-2">Instagram</button>
+					<button type="button" class="btn btn-warning mg-2">Email</button>
+					<button type="button" class="btn btn-warning mg-2" data-bs-toggle="offcanvas"data-bs-target="#sidecard">Facebook</button>
+				</div>
 			</div>
 		</div>
+		
+		<div class="offcanvas offcanvas-start" id="sidecard">
+			<div class="offcanvas-header">
+				<h1 class="offcanvas-title"></h1>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+			</div>
+			<div class="offcanvas-body">
+				<p class="incorect btn"type="button">Option 2</p>
+				<p class="incorect btn"type="button">Option 3</p>
+				<p class="Correct btn"type="button" data-bs-toggle="modal" data-bs-target="#myModal">Option 1</p>				
+				<div class="spinner-border hidden wrong"></div>
+				
+			</div>
+		</div>
+		
+		<div class="modal" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Input Password to Continue</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<form id="varForm" class="myForm" action="page1.html">
+							<label for="pword">Pasword:</label><br>
+							<input class="Awnser"type="text" id="pword" name="pword" value=""><br>
+							<input type="hidden" value="GYUD>@UHDN" id="yes">
+							<input class="Submit"type="submit" value="Submit">
+						</form> 
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</div>
   </body>
 </html>

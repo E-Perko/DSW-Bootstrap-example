@@ -45,15 +45,14 @@ body {
 	padding-top:17%;
 }
 
-<<<<<<< HEAD
+#password{
+	 display: none;
+}
  
- 
- 
- 
- 
- 
-=======
 .col-md-3 {
 	padding-top:3%;
 }
->>>>>>> 0a180e058c16df07be1494ed9ccc24fb9524d61c
+
+.hidden {
+	display: none;
+}
