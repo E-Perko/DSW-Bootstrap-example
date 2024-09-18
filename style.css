@@ -53,10 +53,31 @@ body {
 	padding-top:3%;
 }
 
+<<<<<<< HEAD
+#clue {
+	text-align: center;
+}
+
+#center {
+	text-align: center;
+}
+
+#end {
+	text-align: center;
+}
+
+#end1 {
+	text-align: center;
+}
+
+#end2 {
+	text-align: center;
+=======
 .hidden {
 	display: none;
 }
 
 .center {
 	padding-top:20%;
+>>>>>>> 6ae0c87cc3a6ebbd69e546fca3e2e603bcd5f062
 }
