@@ -35,18 +35,7 @@ $(document).ready(function(){
 		attempt.shift();
 		check();
 	});
-});    
-
-function check() {
-	if ((attempt[0] == password[0]) && (attempt[1] == password[1]) && (attempt[2] == password[2]) && (attempt[3] == password[3]) && (attempt[4] == password[4]) && (attempt[5] == password[5])) {
-		$("#end").text("You Win!");
-		$("#end1").text("You found both clues and finished the escape room.");
-		$("#end2").toggle();
-	}
-}
-=======
-$(document).ready(function() {
-
+	
 	$("#revealpassword").click(function(){
 		$("#password").slideToggle("slow");
 	});
@@ -64,5 +53,13 @@ $(document).ready(function() {
 			return false;
 		}
   });
-});
->>>>>>> 6ae0c87cc3a6ebbd69e546fca3e2e603bcd5f062
+});    
+
+function check() {
+	if ((attempt[0] == password[0]) && (attempt[1] == password[1]) && (attempt[2] == password[2]) && (attempt[3] == password[3]) && (attempt[4] == password[4]) && (attempt[5] == password[5])) {
+		$("#end").text("You Win!");
+		$("#end1").text("You found both clues and finished the escape room.");
+		$("#end2").toggle();
+	}
+}
+
