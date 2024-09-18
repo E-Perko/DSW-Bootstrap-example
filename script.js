@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const password = ["1", "6", "6", "4", "2", "5"];
 const attempt = ["0", "0", "0", "0", "0", "0"];
 
@@ -43,3 +44,25 @@ function check() {
 		$("#end2").toggle();
 	}
 }
+=======
+$(document).ready(function() {
+
+	$("#revealpassword").click(function(){
+		$("#password").slideToggle("slow");
+	});
+	
+	$(".incorect").click(function(){
+		$(".wrong").show();
+	});
+	$(".btn-close").click(function(){
+		$(".wrong").hide();
+	});
+	
+	 $(".Submit").click(function(){
+		if($("#pword").val() == $('#yes').val()){
+			window.location.href = 'page2.html'
+			return false;
+		}
+  });
+});
+>>>>>>> 6ae0c87cc3a6ebbd69e546fca3e2e603bcd5f062
