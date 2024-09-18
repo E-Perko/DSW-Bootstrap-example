@@ -57,7 +57,7 @@ body {
 	text-align: center;
 }
 
-#center {
+#centered {
 	text-align: center;
 }
 
@@ -71,6 +71,7 @@ body {
 
 #end2 {
 	text-align: center;
+}
 
 .hidden {
 	display: none;
