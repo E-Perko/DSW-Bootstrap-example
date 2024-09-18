@@ -25,16 +25,16 @@ body {
 }
 
 .btn-xl {
-    padding: 5px 15px;
+	padding: 5px 15px;
     font-size: 50px;
     border-radius: 20px;
     border-width: 2px;
-	margin-right:25%;
+	/*margin-right:25%;*/
 }
 
 .icon {
-	max-width:35%;
-	margin-left:60%;
+	min-width:100px;
+/*	margin-left:60%;*/
 }
 
 .Bigtext {
@@ -42,7 +42,7 @@ body {
 }
 
 .footer {
-	padding-top:17%;
+	padding-top:20%;
 }
 
 #password{
@@ -55,4 +55,8 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.center {
+	padding-top:20%;
 }
